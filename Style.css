@@ -1,3 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
 
+img { 
+  max-width: 100%;
+  height: auto;
+  
+}
+
+
+article {
+  position: relative;
+  background: darkgrey;
+  top: 33vh;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0;
+}
+
+.author {
+  display: block;
+  margin: 0.5em 0 2em 0;
+  line-height: 1.4;
+  font-style: italic;
+  font-family: georgia, serif;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 1em 0;
+  text-indent: 1em;
+}
+
+.container {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 4em 1em;
+  white-space: nowrap;
+}
+
+.column {
+  white-space: normal;
+  vertical-align: top;
+
+}
+
+.banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 33vh;
+  background-image: url(img/hexagons-sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 700px) {
+  .column {
+    display: inline-block;
+    width: 48%;
+    padding: 1%;
+  }
+  .banner {
+    background-image: url(img/hexagons-lg.jpg);
+  }
+}
 
 
